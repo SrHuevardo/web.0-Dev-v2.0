@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.0 - Inicio</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font aweasome icons -->
+    <script src="https://kit.fontawesome.com/ad335e519e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----------------- menu ------------------>
+    <header class="hero__pages">
+        <nav class="hero__nav">
+            <img class="hero__logo" src="../assets/logowebo.svg" alt="Logo Web.0">
+            <ul id="sidemenu">
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">SOBRE MI</a>
+                </li>
+                <li>
+                    <a href="skills.html">SKILLS</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">PORTAFOLIO</a>
+                </li>
+                <li>
+                    <a href="contactme.html">CONTACTO</a>
+                </li>
+                <img class="nav__icon" onclick="closemenu()" src="../assets/weboRoto_mobil.svg" alt="cerrar menu">
+            </ul>
+            <img class="nav__icon" onclick="openmenu()" src="../assets/weboLleno_mobil.svg" alt="abrir menu ">
+        </nav>
+    </header>
+    <!--------------------------- Personal Information ---------------------------->
+    
+    <!-------------footer ------------------->
+    <footer>
+        <div class="footer__content">
+            <img src="../assets/logowebo.svg" alt="logo web.0 Dev">
+            <p>Gracias por visitar! Te dejo mis redes por si quieres contactarme por ellas.</p>
+            <ul class="social__media">
+                <li><a href="https://www.linkedin.com/in/nicolas-sacco-368554239/"><img src="../assets/linkedin.png" target="_blank" alt="logo linkedin"></a></li>
+                <li><a href="https://www.instagram.com/sr._.huevo/"><img src="../assets/instagram.png" target="_blank" alt="logo instagram"></a></li>
+                <li><a href="https://github.com/SrHuevardo" target="_blank"><img src="../assets/github.png" alt="logo github"></a></li>
+            </ul>
+            <div class="copyright">
+                <p>copyright &copy;2022 Diseño by Webo.0 Dev </p>
+            </div>
+        </div>
+    </footer>
+        <!---------- script hamburger --------------->
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+</body>
+</html>
