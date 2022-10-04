@@ -102,6 +102,10 @@ footer img{
 }
 .social__media a img{
     width: 50px;
+    transition: 0.5s;
+}
+.social__media a img:hover{
+    transform: scale(1.2);
 }
 .copyright{
     padding: 10px 0;

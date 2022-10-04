@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web.0 - Portafolio</title>
+    <meta name="description" content="Aqui puedes ver todos mis trabajos, todos tienen acceso al repositorio de Github">
+    <meta name="keywords" content="huevo, programación, Desarrollo web, Señor huevo, Mr Huevo, portafolio, web developer, programador jr, autodidacta, autobiografia, lenguajes de programación">
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/weboRoto_mobil.svg" type="image/x-icon">
     <!-- CSS link -->
     <link rel="stylesheet" href="../css/style2.css">
     <!-- font aweasome icons -->
     <script src="https://kit.fontawesome.com/ad335e519e.js" crossorigin="anonymous"></script>
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!----------------- menu ------------------>
     <header class="hero__pages">
         <nav class="hero__nav">
-            <a href="../index.html"><img class="hero__logo" src="../assets/web.0__logo.svg" alt="Logo Web.0"></a>
+            <a href="../index.html"><img class="hero__logo swing-in-top-fwd" src="../assets/web.0__logo.svg" alt="Logo Web.0"></a>
             <ul id="sidemenu">
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -42,7 +46,7 @@
     <main>
         <h1 class="main__tittle">Mis Trabajos</h1>
         <div class="works">
-            <div class="work__page">
+            <div class="work__page bounce-in-top">
                 <img src="../assets/pagina anime.png" alt="pagina anime">
                 <div class="work__info">
                     <h3>Store Anime/Manga</h3>
@@ -53,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="work__page">
+            <div class="work__page bounce-in-top">
                 <img src="../assets/ayno.jpg" alt="meme esperando">
                 <div class="work__info">
                     <h3>Ayno</h3>
@@ -61,7 +65,7 @@
                     <a href="https://github.com/SrHuevardo" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            <div class="work__page">
+            <div class="work__page bounce-in-top">
                 <img src="../assets/portafolio.png" alt="portafolio personal">
                 <div class="work__info">
                     <h3>Portafolio Personal</h3>
@@ -98,6 +102,10 @@
         function closemenu(){
             sidemeu.style.right = "-200px";
         }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

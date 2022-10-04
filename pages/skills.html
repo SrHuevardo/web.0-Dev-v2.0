@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web.0 - Skills</title>
+    <meta name="description" content="Poseo conocimientos de HTML 5, CCS 3, JS, Bootstrap, SASS, Arduino entre otros">
+    <meta name="keywords" content="huevo, programación, Desarrollo web, Señor huevo, Mr Huevo, portafolio, web developer, programador jr, autodidacta, autobiografia, lenguajes de programación">
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/weboRoto_mobil.svg" type="image/x-icon">
     <!-- CSS link -->
     <link rel="stylesheet" href="../css/style2.css">
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!----------------- menu ------------------>
     <header class="hero__pages">
         <nav class="hero__nav">
-            <a href="../index.html"><img class="hero__logo" src="../assets/web.0__logo.svg" alt="Logo Web.0"></a>
+            <a href="../index.html"><img class="hero__logo swing-in-top-fwd" src="../assets/web.0__logo.svg" alt="Logo Web.0"></a>
             <ul id="sidemenu">
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -147,9 +151,9 @@
             <img src="../assets/logowebo.svg" alt="logo web.0 Dev">
             <p>Gracias por visitar! Te dejo mis redes por si quieres contactarme por ellas.</p>
             <ul class="social__media">
-                <li><a href="https://www.linkedin.com/in/nicolas-sacco-368554239/"><img src="../assets/linkedin.png" target="_blank" alt="logo linkedin"></a></li>
+                <li><a href="https://www.linkedin.com/in/nicolas-sacco-368554239/" target="_blank"><img src="../assets/linkedin.png" target="_blank" alt="logo linkedin"></a></li>
                 <li><a href="https://github.com/SrHuevardo" target="_blank"><img src="../assets/github.png" alt="logo github"></a></li>
-                <li><a href="https://www.instagram.com/sr._.huevo/"><img src="../assets/instagram.png" target="_blank" alt="logo instagram"></a></li>
+                <li><a href="https://www.instagram.com/sr._.huevo/" target="_blank"><img src="../assets/instagram.png" target="_blank" alt="logo instagram"></a></li>
             </ul>
             <div class="copyright">
                 <p>copyright &copy;2022 Diseño by Webo.0 Dev </p>
@@ -157,14 +161,18 @@
         </div>
     </footer>
         <!---------- script hamburger --------------->
-        <script>
-            var sidemeu = document.getElementById("sidemenu");
-            function openmenu(){
-                sidemeu.style.right = "0";
-            }
-            function closemenu(){
-                sidemeu.style.right = "-200px";
-            }
-        </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
