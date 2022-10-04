@@ -1,0 +1,63 @@
+/*-------------- portfolio page -------------- */
+.works{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    padding: 10px 10px;
+    margin-bottom: 100px;
+}
+.work__page{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work__page img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work__info{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), #f57d0d);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: height 0.5s;
+}
+.work__info h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.pages__link{
+    display: flex;
+}
+.pages__link a, .work__info a{
+    margin-top: 20px;
+    color: orangered;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work__page:hover img{
+    transform: scale(1.1);
+}
+.work__page:hover .work__info{
+    height: 100%;
+}

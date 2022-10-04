@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=League+Gothic&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------------ header -----------------*/
+.hero__pages{
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.hero__nav{
+    display: flex;
+    padding: 10px 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.hero__logo{
+    width: 300px;
+}
+.hero__nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.hero__nav ul li a{
+    font-family: 'League Gothic', sans-serif;
+    color: rgb(236, 226, 76);
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+}
+.hero__nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.hero__nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header__tittle{
+    padding-left: 10%;
+    margin-top: 5%;
+    font-size: 50px;
+}
+.header__tittle h2{
+
+    font-size: 30px;
+}
+.nav__icon{
+    display: none;
+}
+/* -------------- footer ----------- */
+footer{
+    font-family: 'Exo 2', sans-serif;
+
+    padding-top: 40px;
+    background-color: rgb(226, 133, 45);
+    color: rgb(3, 3, 3);
+}
+footer img{
+    width: 100px;
+}
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer__content h3{
+    font-size: 35px;    
+}
+.footer__content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.social__media{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 16px 0;
+}
+.social__media li{
+    margin: 0 10px;
+}
+.social__media a{
+    text-decoration: none;
+}
+.social__media a img{
+    width: 50px;
+}
+.copyright{
+    padding: 10px 0;
+    text-align: center;
+}
+.copyright p{
+    font-size: 15px;
+}
+/*------------------- main ---------------------- */
+main{
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(../assets/weboBackground.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.main__tittle{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.main__pages p{ 
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-inline: 200px;
+}

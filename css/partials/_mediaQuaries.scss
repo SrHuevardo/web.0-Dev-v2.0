@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px){
+    #hero{
+        height: 50vh;
+    }
+    .header__tittle{
+        padding-left: 10%;
+        margin-top: 5%;
+        font-size: 25px;
+    }
+    .header__tittle h2{
+    
+        font-size: 16px;
+    }
+    .nav__icon{
+        display: block;
+        width: 40px;
+        cursor: pointer;
+    }
+    .hero__logo{
+        width: 200px;
+    }
+    .hero__nav ul{
+        background-color: orangered;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 70px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .hero__nav ul li{
+        display: block;
+        margin: 30px;
+    }
+    .hero__nav ul li a{
+        color: black;
+    }
+    .hero__nav ul .nav__icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .main__pages p{
+        padding-inline: 10px;
+    }
+    /*------------- media quaries- skills page ---------------- */
+    .timeline{
+        margin: 50px auto;
+        
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .timeline__container{
+        width:100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .container__text{
+        font-size: 20px;
+    }
+    .right__container{
+        left: 0;
+    }
+    .dot, .right__container .dot{
+        left: 10px;
+    }
+    .left__arrow, .right__arrow{
+        border-right: 15px solid black;
+        border-left: 0;
+        left: -15px;
+    }
+    /*------------- media quaries- contact page ---------------- */
+    .contact{
+        width: 100%;
+    }
+    .contact__info div .fa{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 425px){
+    /*------------- media quaries- contact page ---------------- */
+    .contact{
+        display: block;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 375px){
+    /*------------- media quaries- index page ---------------- */
+    #hero{
+        background-image: none;
+        background-color: black;
+        height: 50vh;
+    }
+    .header__tittle{
+        font-size: 1.5rem;
+    }
+}
